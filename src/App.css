@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #F4D466!important;
+
+}
+/*****************HEADER******************/
+
+.header{
+ width: 250px;
+ height: 140px;
+ margin: auto;
+ margin-top: 100px;
+ font-size: 23px;
+ color: #1D4289;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif!important;
+
+}
+
+.legends{
+  color: #C80F2E;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif!important;
+}
+
+#input{
+  width: 450px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  outline-style: outset;
+  outline-color: #C80F2E;
+}
+
+/************* CONTAINER ****************/
+
+.container{
+  /* border: 2px solid red; */
+  width: 80%;
+  /* height: 100%; */
+  margin: auto;
+  margin-top: 200px;
+  background-image: url(./assets/cool-nba-logo-wallpaper-preview.jpg);
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  
+
+}
+
+.player {
+  width: 250px;
+  height: 500px;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+ 
+ 
+}
+
+.player img {
+  width: 200px;
+  height: 300px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; 
+  margin-top: -50px;
+  
+ 
+}
+
+.player img:hover{
+  scale: 1.1;
+  transition: all 1s;
+  cursor: pointer;
+}
