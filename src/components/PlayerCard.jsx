@@ -1,19 +1,28 @@
 import React from 'react'
+import "../App.css";
 
-const PlayerCard = ({data}) => {
+const PlayerCard = ({datei}) => {
   return (
 
 
-    <div>
-    {data.map((player,index)=>{
+    <div className='container'>
+    {datei.map((player,index)=>{
       return (
-      <div key={index}>
+        
+      <div className='playerCard' key={index}>
 
      <ol>
-      <li>🏀{player.statistics}</li>
+      <li>🏀{player.statistics[0]}</li>
+      <li>🏀{player.statistics[1]}</li>
+      <li>🏀{player.statistics[2]}</li>
+      <li>🏀{player.statistics[3]}</li>
+     <br /> <br /> <br /><br /> <br />
+     <hr />
+      
      </ol>
 
       </div>
+      
     )})}
 
 
