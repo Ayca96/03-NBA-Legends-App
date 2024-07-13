@@ -1,34 +1,30 @@
-import React from 'react'
-import "../App.css";
+import React, { useState } from "react";
+import { Card } from "react-bootstrap";
 
-const PlayerCard = ({datei}) => {
+const Player = ({ name, img, statistics }) => {
+  const [showResim, setShow] = useState(true);
+
   return (
+    <Card
+      onClick={() => setShow(!showResim)}
+      className="rounded-2 m-auto player-kart"
+      role="button"
+    >
+      {showResim ? (
+        <Card.Img className="player-resim" variant="top" src={img} />
+      ) : (
+        <ul className="m-auto">
+         {statistics.map((item,index)=>(
+          <li key={index} className="h5 list-unstyled text-start">🏀{item}</li>
+         ))}
+        </ul>
+      )}
 
+      <Card.Footer>
+        <Card.Title>{name}</Card.Title>
+      </Card.Footer>
+    </Card>
+  );
+};
 
-    <div className='container'>
-    {datei.map((player,index)=>{
-      return (
-        
-      <div className='playerCard' key={index}>
-
-     <ol>
-      <li>🏀{player.statistics[0]}</li>
-      <li>🏀{player.statistics[1]}</li>
-      <li>🏀{player.statistics[2]}</li>
-      <li>🏀{player.statistics[3]}</li>
-     <br /> <br /> <br /><br /> <br />
-     <hr />
-      
-     </ol>
-
-      </div>
-      
-    )})}
-
-
-
-    </div>
-  )
-}
-
-export default PlayerCard
+export default Player;

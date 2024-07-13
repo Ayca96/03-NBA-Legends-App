@@ -1,19 +1,15 @@
-import React from 'react';
-import NBA from "../../src/assets/nba-logo.png"
-
+import React from 'react'
+import { Container,Image } from 'react-bootstrap';
+import nbalogo from "../assets/nba-logo.png"
 
 const Header = () => {
   return (
-    <div className='header'>
+    <Container>
 
-    <h1><img src={NBA} alt="RESIM" /></h1>
-    <h2>NBA <span className='legends'>LEGENDS</span></h2>
-   
-    <input id='input' type="text" placeholder='   Search Player...' />
-  
-    
+    <Image width="200px" src={nbalogo}/>
+    <h1 className='display-4 fw-bold font-monospace my-2'>NBA Legends</h1>
 
-    </div>
+    </Container>
   )
 }
 

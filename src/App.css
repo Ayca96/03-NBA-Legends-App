@@ -4,96 +4,35 @@
   box-sizing: border-box;
 }
 
+
 body{
-  background-color: #F4D466!important;
-
-}
-/*****************HEADER******************/
-
-.header{
- width: 250px;
- height: 140px;
- margin: auto;
- margin-top: 100px;
- font-size: 23px;
- color: #1D4289;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif!important;
-
-}
-
-.legends{
-  color: #C80F2E;
+  background-color: #f4d467!important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif!important;
 }
 
-#input{
-  width: 450px;
-  height: 30px;
-  border-radius: 5px;
-  border: none;
-  outline-style: outset;
-  outline-color: #C80F2E;
-}
-
-/************* CONTAINER ****************/
-
-.container{
-  /* border: 2px solid red; */
-  width: 80%;
-  /* height: 100%; */
-  margin: auto;
-  margin-top: 200px;
-  background-image: url(./assets/cool-nba-logo-wallpaper-preview.jpg);
-  background-position: center;
-  display: flex;
-  flex-wrap: wrap;
-  
-
-}
-
-.player,.playerCard{
-  width: 250px;
-  height: 400px;
-  border: 2px solid white;
-  border-radius: 20px;
-  margin: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center;
-  background-color: white;
-  overflow: hidden;
- 
- 
-}
-
-.player img {
-  width: 200px;
-  height: 300px;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover; 
-  margin-top: -50px;
-  
- 
-}
-
-.player img:hover{
-  scale: 1.1;
-  transition: all 1s;
-  cursor: pointer;
+.kart-container{
+  background-image: url("https://p4.wallpaperbetter.com/wallpaper/661/973/110/cool-nba-logo-wallpaper-preview.jpg");
 }
 
 
-/* .playerCard{
-  width: 250px;
-  height: 400px;
-  border: 2px solid white;
-  border-radius: 20px;
-  margin: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-} */
+
+
+.player-kart{
+height: 400px;
+max-width: 280px;
+
+}
+
+.player-resim{
+  height:350px ;
+  transition: transform all 1s;
+}
+
+.player-kart:hover{
+  box-shadow: 3px 3px 20px 5px rgba(0,0,0, .5);
+}
+
+.player-kart:hover .player-resim{
+  transform: scale(0.95);
+}
+

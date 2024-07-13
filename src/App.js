@@ -1,18 +1,16 @@
-
-import './App.css';
-import CardContainer from './components/CardContainer';
+import { Container } from 'react-bootstrap';
+import "./App.css"
+import "bootstrap/dist/css/bootstrap.min.css";
 import Header from './components/Header';
-import PlayerCard from './components/PlayerCard';
-import {data} from "./helper/data";
+import CardContainer from './components/CardContainer';
 
 
 function App() {
   return (
-    <div>
+    <Container className='text-center'>
      <Header/>
-     <CardContainer veri={data}/>
-     {/* <PlayerCard datei={data}/> */}
-    </div>
+     <CardContainer/>
+    </Container>
   );
 }
 
